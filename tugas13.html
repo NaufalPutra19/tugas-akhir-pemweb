@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/w3.css" />
+    <title>Tugas_13</title>
+  </head>
+  <body>
+    <div class="w3-container">
+      <img src="css/ocean.jpeg" alt="onepiece" style="width: 60%; height: 80%;"/>
+    </div>
+
+    <div class="w3-bar w3-black">
+      <button class="w3-bar-item w3-button" onclick="Menu('home')">
+        Home
+      </button>
+      <button class="w3-bar-item w3-button" onclick="Menu('ocean')">
+        About Me
+      </button>
+      <button class="w3-bar-item w3-button" onclick="Menu('ocean')">
+        Ocean Floor
+      </button>
+      <button class="w3-bar-item w3-button" onclick="Menu('evening')">
+        Evening Glow
+      </button>
+      <button class="w3-bar-item w3-button" onclick="Menu('light')">Light</button>
+      <button class="w3-bar-item w3-button" onclick="Menu('daisy')">Daisy</button>
+      <div class="w3-dropdown-hover">
+      <button class="w3-button">Pilihan</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <button class="w3-bar-item w3-button" onclick="Menu('ocean')">Mobil</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="home" class="w3-container char w3-animate-fading">
+      <center>
+        <h1>Welcome to My Website</h1>
+      </center>
+    </div>
+    <div
+      id="ocean"
+      class="w3-container char w3-animate-fading"
+      style="display: none"
+    >
+      <center>
+      <h2>My Profile</h2>
+      <img src="css/profile.png" alt="" style="width: 35%;">
+        <table>
+          <tr>
+            <td>
+              Nama : Naufal Putra Firmansyah
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Kelas : IF-1
+            </td>
+          </tr>
+          <tr>
+            <td>
+              NIM : 10123036
+            </td>
+          </tr>
+        </table>
+      <p></p>
+    </div>
+
+    <div
+      id="evening"
+      class="w3-container char w3-animate-bottom"
+      style="display: none"
+    >
+      <h2>Evening Glow</h2>
+      <img src="css/bad.jpg" alt="bad" />
+    </div>
+
+    <div
+      id="light"
+      class="w3-container char w3-animate-top"
+      style="display: none"
+    >
+      <h2>Light</h2>
+      <img src="css/light.jpeg" alt="Light" />
+    </div>
+
+    <div
+      id="daisy"
+      class="w3-container char w3-animate-zoom"
+      style="display: none"
+    >
+      <h2>Daisy</h2>
+      <img src="css/daisy.jpeg" alt="Daisy" />
+    </div>
+    <script>
+      function Menu(Karakter) {
+        var i;
+        var x = document.getElementsByClassName("char");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        document.getElementById(Karakter).style.display = "block";
+      }
+    </script>
+  </body>
+</html>
