@@ -8,42 +8,189 @@
   </head>
   <body>
     <div class="w3-container">
-      <img src="css/ocean.jpeg" alt="onepiece" style="width: 60%; height: 80%;"/>
+      <img src="css/sserafim.jpg" alt="onepiece" style="width: 50%; height: 80%;"/>
     </div>
 
     <div class="w3-bar w3-black">
       <button class="w3-bar-item w3-button" onclick="Menu('home')">
         Home
       </button>
-      <button class="w3-bar-item w3-button" onclick="Menu('ocean')">
-        About Me
+      <button class="w3-bar-item w3-button" onclick="Menu('chaewon')">
+        Kim Chae-Won
       </button>
-      <button class="w3-bar-item w3-button" onclick="Menu('ocean')">
-        Ocean Floor
+      <button class="w3-bar-item w3-button" onclick="Menu('yunjin')">
+        Yunjin
       </button>
-      <button class="w3-bar-item w3-button" onclick="Menu('evening')">
-        Evening Glow
+      <button class="w3-bar-item w3-button" onclick="Menu('sakura')">
+        Sakura Miyawaki
       </button>
-      <button class="w3-bar-item w3-button" onclick="Menu('light')">Light</button>
-      <button class="w3-bar-item w3-button" onclick="Menu('daisy')">Daisy</button>
+      <button class="w3-bar-item w3-button" onclick="Menu('kazuha')">
+        Kazuha Nakamura
+      </button>
       <div class="w3-dropdown-hover">
-      <button class="w3-button">Pilihan</button>
+      <button class="w3-button">Other Member</button>
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <button class="w3-bar-item w3-button" onclick="Menu('ocean')">Mobil</button>
+          <button class="w3-bar-item w3-button" onclick="Menu('eunchae')">Hong Eun-Chae</button>
+          <button class="w3-bar-item w3-button" onclick="Menu('garam')">Kim Ga-Ram</button>
         </div>
       </div>
+      <button class="w3-bar-item w3-button" onclick="Menu('about')">
+        About Me
+      </button>
     </div>
 
-    <div id="home" class="w3-container char w3-animate-fading">
+    <div id="home" class="w3-container char w3-spin">
       <center>
         <h1>Welcome to My Website</h1>
+        <h2>I hope you enjoy!</h2>
       </center>
     </div>
-    <div
-      id="ocean"
-      class="w3-container char w3-animate-fading"
-      style="display: none"
-    >
+
+    <div id="chaewon" class="w3-container char w3-animate-top" style="display: none;">
+      <center>
+        <p></p>
+        <img src="css/chae-won.jpg" alt="Chaewon" width="24%">
+        <table>
+          <tr>
+            <td>
+              Nama : Kim Chae-Won
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Tanggal Lahir : 1 Agustus 2000
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Kebangsaan : Gangnam, Seoul, Korea Selatan
+            </td>
+          </tr>
+        </table>
+      </center>
+    </div>
+
+    <div id="yunjin" class="w3-container char w3-animate-bottom" style="display: none">
+    <center>
+      <p></p>
+      <img src="css/yunjin.jpg" alt="Yunjin" width="24%">
+      <table>
+        <tr>
+          <td>
+            Nama : Heo Yun-Jin
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tanggal Lahir : 8 Oktober 2001
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Kebangsaan : Korea Selatan - Amerika Serikat
+          </td>
+        </tr>
+      </table>
+    </center>
+    </div>
+
+    <div id="sakura" class="w3-container char w3-animate-right" style="display: none">
+      <center>
+      <p></p>
+      <img src="css/sakura.jpg" alt="Sakura" width="24%"/>
+      <table>
+        <tr>
+          <td>
+            Nama : Miyawaki Sakura
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tanggal Lahir : 19 Maret 1998
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Kebangsaan : Kagoshima, Jepang
+          </td>
+        </tr>
+      </table>
+      </center>
+    </div>
+
+    <div id="kazuha" class="w3-container char w3-animate-left" style="display: none">
+      <center>
+      <p></p>
+      <img src="css/kazuha.jpg" alt="Sakura" width="24%"/>
+      <table>
+        <tr>
+          <td>
+            Nama : Nakamura Kazuha
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tanggal Lahir : 9 Agustus 2003
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Kebangsaan : Kochi, Jepang
+          </td>
+        </tr>
+      </table>
+      </center>
+    </div>
+
+    <div id="eunchae" class="w3-container char w3-animate-zoom" style="display: none">
+      <center>
+      <p></p>
+      <img src="css/eunchae.jpg" alt="Sakura" width="24%"/>
+      <table>
+        <tr>
+          <td>
+            Nama : Hong Eun-Chae
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tanggal Lahir : 10 November 2006
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Kebangsaan : Korea Selatan
+          </td>
+        </tr>
+      </table>
+      </center>
+    </div>
+
+    <div id="garam" class="w3-container char w3-animate-fading" style="display: none">
+      <center>
+      <p></p>
+      <img src="css/kim-ga-ram.jpg" alt="Sakura" width="24%"/>
+      <table>
+        <tr>
+          <td>
+            Nama : Kim -Ga-Ram
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Tanggal Lahir : 16 November 2005
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Kebangsaan : Korea Selatan
+          </td>
+        </tr>
+      </table>
+      </center>
+    </div>
+
+    <div id="about" class="w3-container char w3-animate-fading" style="display: none">
       <center>
       <h2>My Profile</h2>
       <img src="css/profile.png" alt="" style="width: 35%;">
@@ -65,33 +212,6 @@
           </tr>
         </table>
       <p></p>
-    </div>
-
-    <div
-      id="evening"
-      class="w3-container char w3-animate-bottom"
-      style="display: none"
-    >
-      <h2>Evening Glow</h2>
-      <img src="css/bad.jpg" alt="bad" />
-    </div>
-
-    <div
-      id="light"
-      class="w3-container char w3-animate-top"
-      style="display: none"
-    >
-      <h2>Light</h2>
-      <img src="css/light.jpeg" alt="Light" />
-    </div>
-
-    <div
-      id="daisy"
-      class="w3-container char w3-animate-zoom"
-      style="display: none"
-    >
-      <h2>Daisy</h2>
-      <img src="css/daisy.jpeg" alt="Daisy" />
     </div>
     <script>
       function Menu(Karakter) {
